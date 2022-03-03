@@ -11,6 +11,10 @@
 		628F3FC827D07C4D00FC4B81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F3FC727D07C4D00FC4B81 /* ContentView.swift */; };
 		628F3FCA27D07C4D00FC4B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628F3FC927D07C4D00FC4B81 /* Assets.xcassets */; };
 		628F3FCD27D07C4D00FC4B81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628F3FCC27D07C4D00FC4B81 /* Preview Assets.xcassets */; };
+		628F3FD727D07CF200FC4B81 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F3FD627D07CF200FC4B81 /* HomeView.swift */; };
+		628F3FD927D07D7600FC4B81 /* CustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F3FD827D07D7600FC4B81 /* CustomDatePickerView.swift */; };
+		628F3FDB27D0814200FC4B81 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F3FDA27D0814200FC4B81 /* DateValue.swift */; };
+		628F3FDD27D088BF00FC4B81 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F3FDC27D088BF00FC4B81 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		628F3FC727D07C4D00FC4B81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		628F3FC927D07C4D00FC4B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		628F3FCC27D07C4D00FC4B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		628F3FD627D07CF200FC4B81 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		628F3FD827D07D7600FC4B81 /* CustomDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerView.swift; sourceTree = "<group>"; };
+		628F3FDA27D0814200FC4B81 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		628F3FDC27D088BF00FC4B81 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		628F3FC427D07C4D00FC4B81 /* CustomDatePicker-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				628F3FC527D07C4D00FC4B81 /* CustomDatePicker_SwiftUIApp.swift */,
-				628F3FC727D07C4D00FC4B81 /* ContentView.swift */,
+				628F3FD327D07CC600FC4B81 /* App */,
+				628F3FD527D07CDD00FC4B81 /* Model */,
+				628F3FD427D07CD200FC4B81 /* View */,
 				628F3FC927D07C4D00FC4B81 /* Assets.xcassets */,
 				628F3FCB27D07C4D00FC4B81 /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				628F3FCC27D07C4D00FC4B81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		628F3FD327D07CC600FC4B81 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				628F3FC527D07C4D00FC4B81 /* CustomDatePicker_SwiftUIApp.swift */,
+				628F3FC727D07C4D00FC4B81 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		628F3FD427D07CD200FC4B81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				628F3FD627D07CF200FC4B81 /* HomeView.swift */,
+				628F3FD827D07D7600FC4B81 /* CustomDatePickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		628F3FD527D07CDD00FC4B81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				628F3FDA27D0814200FC4B81 /* DateValue.swift */,
+				628F3FDC27D088BF00FC4B81 /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628F3FD727D07CF200FC4B81 /* HomeView.swift in Sources */,
 				628F3FC827D07C4D00FC4B81 /* ContentView.swift in Sources */,
 				628F3FC627D07C4D00FC4B81 /* CustomDatePicker_SwiftUIApp.swift in Sources */,
+				628F3FD927D07D7600FC4B81 /* CustomDatePickerView.swift in Sources */,
+				628F3FDD27D088BF00FC4B81 /* Task.swift in Sources */,
+				628F3FDB27D0814200FC4B81 /* DateValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
